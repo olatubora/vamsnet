@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.shw {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  position: relative;
+}
+
+.carousel-root {
+  height: 600px !important;
+}
+
+.carousel-root .carousel.carousel-slider {
+  height: 600px !important;
+  padding-bottom: 30px;
+}
+.carousel .slide .legend {
+  display: none !important;
+}
+
+.carousel-root .carousel .slide img {
+  height: 600px !important;
+}
+
+.ourServices {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../public/assets/png/banner1.png"), #555454;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.brandingOne {
+  background: linear-gradient(
+      0deg,
+      rgba(216, 146, 40, 0.2),
+      rgba(216, 146, 40, 0.2)
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../public/assets/png/banner2.png"), #765e45;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .carousel-root {
+    height: 500px !important;
+  }
+  .carousel-root .carousel.carousel-slider {
+    height: 500px !important;
+    padding-bottom: 30px;
+  }
+  .carousel-root .carousel .slide img {
+    height: 500px !important;
+  }
+
+  .brandingOne {
+    height: 650px;
+  }
+}
