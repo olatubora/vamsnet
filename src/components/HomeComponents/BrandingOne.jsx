@@ -3,6 +3,7 @@ import React from "react";
 import image1 from "../../../public/assets/png/1.png";
 import image2 from "../../../public/assets/png/2.png";
 import image3 from "../../../public/assets/png/3.png";
+import { CustomButton } from "../UI/Button/CustomButton";
 
 export const BrandingOne = () => {
   return (
@@ -28,6 +29,14 @@ export const BrandingOne = () => {
             With our expertise and attention to detail, you can trust that your
             business is in good hands
           </p>
+          <div className="">
+            <CustomButton
+              className={
+                "md:p-6 p-4 text-base leading-19 my-3 font-medium md:w-[200px] w-full  shadow-md bg-primary text-white rounded-md hover:bg-yellow-800 hover:text-secondary transition-all duration-100 ease-out"
+              }
+              text={"Learn More"}
+            />
+          </div>
         </div>
         <div className="relative top-0 left-0 w-full h-full">
           <Image

@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "../../../public/assets/png/1.png";
-import image2 from "../../../public/assets/png/2.png";
-import image3 from "../../../public/assets/png/3.png";
+import image1 from "../../../public/assets/png/4.png";
+import image2 from "../../../public/assets/png/5.png";
+import image3 from "../../../public/assets/png/6.png";
 import { CustomButton } from "../UI/Button/CustomButton";
 
 export const BrandingTwo = () => {
@@ -43,7 +43,14 @@ export const BrandingTwo = () => {
             understand that every business is different, which is why we take
             the time to get to know you and your{" "}
           </p>
-          <CustomButton />
+          <div className="flex justify-end">
+            <CustomButton
+              className={
+                "md:p-6 p-4 text-base leading-19 my-3 font-medium md:w-[200px] w-full  shadow-md bg-primary text-white rounded-md hover:bg-yellow-800 hover:text-secondary transition-all duration-100 ease-out"
+              }
+              text={"Apply  Now"}
+            />
+          </div>
         </div>
         <Image
           src={image3}

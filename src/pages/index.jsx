@@ -4,6 +4,7 @@ import { ChatWithUs } from "@/components/HomeComponents/ChatWithUs";
 import { Faqs } from "@/components/HomeComponents/Faqs";
 import { Hero } from "@/components/HomeComponents/Hero";
 import { Ourservices } from "@/components/HomeComponents/Ourservices";
+import Showcase from "@/components/HomeComponents/Showcase";
 import { SocialMedia } from "@/components/HomeComponents/SocialMedia";
 import { WhatWeOffer } from "@/components/HomeComponents/WhatWeOffer";
 import MainLayout from "@/components/layouts";
@@ -23,6 +24,19 @@ export default function Home() {
       id: 2,
     },
   ];
+
+  const chatUs2 = [
+    {
+      title: "Do you want to get updated on job opportunities? ",
+      name: "Subcribe Free",
+      id: 1,
+    },
+    {
+      title: "Do you want to get updated on our newsletters? ",
+      name: "Subcribe For Free",
+      id: 2,
+    },
+  ];
   return (
     <MainLayout active={router.asPath}>
       <>
@@ -34,6 +48,9 @@ export default function Home() {
         <WhatWeOffer />
         <BrandingOne />
         <BrandingTwo />
+        <Faqs />
+        <ChatWithUs lists={chatUs2} color={"bg-[#D9D9D9]"} />
+        <Showcase />
       </>
     </MainLayout>
   );
