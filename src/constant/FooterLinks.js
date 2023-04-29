@@ -1,6 +1,6 @@
 import Facebook from "../../public/assets/png/facebook.png";
 import Instagram from "../../public/assets/png/instagram.png";
-import YouTube from "../../public/assets/png/youTube.png";
+import YouTube from "../../public/assets/png/youtube.png";
 import LinkedIn from "../../public/assets/png/linkedin.png";
 
 export const companyList = [
